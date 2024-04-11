@@ -1,0 +1,289 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Traditional, Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_LISTBOX_POPUP MENU
+BEGIN
+    POPUP "Popup Menu for ListBox  "
+    BEGIN
+        MENUITEM "&Select All\tCtl + A",        ID_POPUPMENUFORLISTBOX_SELECTALL
+        MENUITEM "&Copy\tCtl + C",              ID_POPUPMENUFORLISTBOX_COPY
+    END
+END
+
+#endif    // Chinese (Traditional, Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ALCSTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ALCSTest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 252, 63
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "ALCS Sockets Tester"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Updated from TCPIP Builder 1.8 by Andrew Jan 2011",IDC_STATIC,72,20,164,17,SS_NOPREFIX
+    CONTROL         134,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,7,7,44,48
+END
+
+IDD_ALCSTest_DIALOG DIALOGEX 0, 0, 466, 350
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ALCS Sockets Tester"
+FONT 10, "Courier New", 0, 0, 0x1
+BEGIN
+    CONTROL         "IPAddress1",IDC_IPADDR,"SysIPAddress32",WS_TABSTOP,50,19,100,13
+    EDITTEXT        IDC_PORT,154,19,41,13,ES_AUTOHSCROLL,WS_EX_RIGHT
+    CONTROL         "TCP",IDC_TCP,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,201,20,30,10
+    CONTROL         "UDP",IDC_UDP,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,233,20,31,10
+    PUSHBUTTON      "Create Socket",IDC_CREATE,312,18,57,14
+    PUSHBUTTON      "Destroy Socket",IDC_DESTROY,394,18,61,14
+    CONTROL         "IPAddress1",IDC_RIPADDR,"SysIPAddress32",WS_TABSTOP,50,56,100,13
+    EDITTEXT        IDC_RPORT,154,56,41,13,ES_AUTOHSCROLL,WS_EX_RIGHT
+    PUSHBUTTON      "Connect",IDC_CONNECT,313,55,57,14
+    EDITTEXT        IDC_SBUFFER,16,84,388,32,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "Send",IDC_SEND,411,83,44,14
+    PUSHBUTTON      "Clear",IDC_RCLR,411,133,44,14
+    PUSHBUTTON      "Clear",IDC_SCLR,411,100,44,14
+    PUSHBUTTON      "About...",IDC_ABOUT,356,329,48,14
+    PUSHBUTTON      "Exit",IDCANCEL,411,329,44,14
+    LISTBOX         IDC_RBUFFER,16,131,388,177,LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL
+    GROUPBOX        "Socket Setup",IDC_STATIC,7,7,452,33
+    GROUPBOX        "Connection Setup",IDC_STATIC,7,43,452,33
+    GROUPBOX        "Send data",IDC_STATIC,7,75,452,44
+    GROUPBOX        "Receive data",IDC_STATIC,7,122,452,202
+    LTEXT           "Packets:",IDC_STATIC,16,313,29,8
+    LTEXT           "Bytes:",IDC_STATIC,165,313,20,8
+    LTEXT           "Last packet:",IDC_STATIC,312,313,40,8
+    LTEXT           "0",IDC_PACKETS,50,313,58,8
+    LTEXT           "0",IDC_BYTES,190,313,58,8
+    LTEXT           "0",IDC_LAST,411,313,44,8
+    LTEXT           "Local IP:",IDC_STATIC,16,21,29,8
+    LTEXT           "IP:",IDC_STATIC,16,58,10,8
+    PUSHBUTTON      "System information",IDC_NETSTAT,7,329,77,14
+    PUSHBUTTON      "Trace Off",IDC_CONTINUE,411,188,44,13
+    PUSHBUTTON      "Repeat Off",IDC_REPEAT,411,151,44,14
+    EDITTEXT        IDC_COUNT,411,170,44,14,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_RIGHT
+END
+
+IDD_Info DIALOGEX 0, 0, 231, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " System information"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_INFO,7,7,217,127,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "ALCS Socket Tester"
+            VALUE "CompanyName", "Andrew Jan"
+            VALUE "FileDescription", "Learned from TCPIP Builder"
+            VALUE "FileVersion", "1, 2, 0, 0"
+            VALUE "InternalName", "ALCS Tester"
+            VALUE "OriginalFilename", "ALCS Socket Tester"
+            VALUE "PrivateBuild", "-"
+            VALUE "ProductName", "ALCS Socket Tester"
+            VALUE "ProductVersion", "1, 2, 0, 0"
+            VALUE "SpecialBuild", "-"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        VERTGUIDE, 62
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_ALCSTest_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 459
+        VERTGUIDE, 16
+        VERTGUIDE, 50
+        VERTGUIDE, 154
+        VERTGUIDE, 404
+        VERTGUIDE, 411
+        VERTGUIDE, 455
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+        HORZGUIDE, 62
+        HORZGUIDE, 308
+        HORZGUIDE, 317
+    END
+
+    IDD_Info, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP                  "res\\logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About ALCS Socket Tester"
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ALCSTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

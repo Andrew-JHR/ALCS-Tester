@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ALCSTest">
+</Property><Property Name="Solution File" Value="E:\src\c++\ALCS Tester\ALCSTest.sln">
+</Property><Property Name="User Options File" Value="E:\src\c++\ALCS Tester\ALCSTest.suo">
+</Property><Property Name="Date" Value="2012年12月27日">
+</Property><Property Name="Time" Value="上午 11:20">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ALCSTest.sln" Description="File successfully backed up as E:\src\c++\ALCS Tester\ALCSTest.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="ALCSTest.suo" Description="File successfully backed up as E:\src\c++\ALCS Tester\ALCSTest.suo.old">
+</Event><Event ErrorLevel="0" Project="ALCSTest" Source="ALCSTest.vcproj" Description="Converting project file 'E:\src\c++\ALCS Tester\ALCSTest.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ALCSTest" Source="ALCSTest.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="ALCSTest" Source="ALCSTest.vcproj" Description="MSB8012: $(TargetPath) ('E:\src\c++\ALCS Tester\.\Release\ALCSTest.exe') does not match the Linker's OutputFile property value '.\Release/ALCSTest.exe' ('E:\src\c++\ALCS Tester\Release/ALCSTest.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="ALCSTest" Source="ALCSTest.vcproj" Description="MSB8012: $(TargetPath) ('E:\src\c++\ALCS Tester\.\Debug\ALCSTest.exe') does not match the Linker's OutputFile property value '.\Debug/ALCSTest.exe' ('E:\src\c++\ALCS Tester\Debug/ALCSTest.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="ALCSTest" Source="ALCSTest.vcproj" Description="Done converting to new project file 'E:\src\c++\ALCS Tester\ALCSTest.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ALCSTest" Source="ALCSTest.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ALCSTest.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ALCSTest.sln" Description="Converted">
+</Event></UpgradeLog>
